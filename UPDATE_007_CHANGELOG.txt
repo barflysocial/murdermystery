@@ -1,7 +1,0 @@
-UPDATE 007
-
-Single-case debug bundle
-- Only Crime 001 in manifest
-- Default case set to Crime 001
-- Intended for isolating engine vs multi-case issues
-- Upload this full bundle as a clean replacement
