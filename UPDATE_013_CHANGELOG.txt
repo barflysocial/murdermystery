@@ -1,0 +1,8 @@
+UPDATE 013
+
+Fixes included:
+- Fixed Clues tab not showing unlocked clues
+- Evidence object entries are now converted to include their clue IDs
+- Clues tab now supports Crime 001 evidence text fields: desc and short
+- Added compatibility for grants_evidence on scenes and interview topics
+- Keeps UPDATE 012 behavior: attempts, hidden Home after Start, New Attempt system
