@@ -23,7 +23,7 @@ const state = {
 };
 
 const PENALTIES = { hint:60, wrongCheckpoint:90, wrongKiller:300, wrongMotive:120, wrongMethod:120, wrongProof:60 };
-const CHECKPOINT_ADVANCE_DELAY_MS = 900;
+const CHECKPOINT_ADVANCE_DELAY_MS = 5000;
 
 const el = {
   heroTitle: document.getElementById('heroTitle'),
