@@ -1,0 +1,14 @@
+UPDATE 010 REVISED
+
+This supersedes the earlier UPDATE 010 bundle.
+
+Included changes:
+- Removed Save button
+- Removed Load button
+- Kept Reset button only
+- Single-case Crime 001 setup
+- Start button remains the main trigger to begin the crime
+- Start button is centered and styled with pink gradient
+- Navigation unlocks after Start
+- No selector
+- No Resume button
