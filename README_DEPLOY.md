@@ -1,1 +1,0 @@
-# Barfly Mystery Engine — Single Case Build\n\nCrime 001 only. Start begins the timed run.
