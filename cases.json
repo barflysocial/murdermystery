@@ -1,0 +1,10 @@
+{
+  "default_case": "case_001.json",
+  "cases": [
+    {
+      "id": "case_001",
+      "file": "case_001.json",
+      "label": "Crime 001 \u2014 The Karaoke Killer"
+    }
+  ]
+}
