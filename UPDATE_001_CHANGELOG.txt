@@ -1,0 +1,34 @@
+UPDATE 001
+
+Bundle name:
+mystery-series-update-001.zip
+
+Included changes:
+- Full matched app bundle
+- Single navigation panel
+- Home screen support
+- Instructions screen support
+- Start button label update
+- Marathon timer system (count-up)
+- Time penalties instead of countdown pressure
+- Active Run panel shows Elapsed / Penalties / Final Time
+- Pink selected checkpoint answers
+- Submit Answer flow for checkpoints
+- Continue after checkpoint submission
+- Crime 001, Crime 002, and Crime 003 included
+- cases.json included
+- render.yaml included
+
+Penalty rules in this build:
+- Hint: +1:00
+- Wrong checkpoint: +1:30
+- Wrong killer: +5:00
+- Wrong motive: +2:00
+- Wrong method: +2:00
+- Wrong proof clue: +1:00
+
+Tracking note:
+Future bundles should follow this pattern:
+- mystery-series-update-002.zip
+- mystery-series-update-003.zip
+- etc.
