@@ -1,0 +1,18 @@
+UPDATE 011
+
+Rebuilt single-case Crime 001 bundle with the requested UI and flow applied:
+- Save removed
+- Load removed
+- Reset kept
+- Single-case Crime 001 setup
+- Start as the main trigger
+- No selector
+- No Resume button
+- Removed top detail pills (Setting / Series Arc / Mode / Rank)
+- Centered Start button with pink gradient
+- Start triggers the crime and starts the timer
+- Navigation stays limited until Start is pressed
+- After Start, the menu unlocks
+- One navigation system only
+- Checkpoint answers highlight pink when selected
+- Submit Answer flow

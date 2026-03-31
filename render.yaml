@@ -1,0 +1,1 @@
+services:\n  - type: web\n    name: barfly-mystery-engine\n    runtime: static\n    staticPublishPath: .\n
