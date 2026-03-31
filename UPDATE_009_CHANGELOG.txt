@@ -1,0 +1,17 @@
+UPDATE 009
+
+Single-case hardload fix for Crime 001.
+
+Root cause addressed:
+- previous bundles could still depend on a bad or missing manifest
+- app now hard-loads case_001.json on startup
+- cases.json is reduced to Crime 001 only
+
+Included:
+- app.js patched to hard-load case_001.json
+- single-case manifest
+- case_001.json
+- index.html
+- styles.css
+- render.yaml
+- README_DEPLOY.md
