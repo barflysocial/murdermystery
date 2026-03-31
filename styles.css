@@ -61,8 +61,14 @@ select{min-width:0;flex:1;background:#110d1d;color:var(--text);border:1px solid 
 .side-block+.side-block{margin-top:14px;padding-top:14px;border-top:1px solid var(--line)}
 .side-title{font-size:11px;letter-spacing:.16em;text-transform:uppercase;color:#d5c8ec;font-weight:800}
 .metric-grid{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.metric-grid-3{grid-template-columns:1fr;gap:12px}
 .metric-card{padding:16px;border-radius:18px;background:rgba(255,255,255,.05);border:1px solid var(--line);display:flex;flex-direction:column;gap:8px}
+.metric-card-feature{text-align:center;align-items:center;justify-content:center;min-height:108px}
 .metric-card strong{font-size:30px;line-height:1}
+.metric-card-feature .metric-label{font-size:14px;text-transform:uppercase;letter-spacing:.12em}
+.metric-card-feature strong{font-size:40px}
+.timer-card.is-warning{background:rgba(140,24,34,.28);border-color:rgba(255,93,114,.65);box-shadow:0 0 0 1px rgba(255,93,114,.15) inset}
+.timer-card.is-warning strong,.timer-card.is-warning .metric-label{color:#ffd7de}
 .metric-label{font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--soft)}
 .rail,.actions,.tabs,.choices,.answer-list,.footer-actions,.topic-list,.inline-pills,.meta-grid,.case-chip-row{display:flex;flex-wrap:wrap;gap:10px}
 .rail{flex-direction:column}
@@ -161,6 +167,7 @@ radial-gradient(circle at top, rgba(159,103,255,.16), transparent 38%),
   .hero-copy,.hero-console,.sidebar,.panel{padding:18px}
   .tabs{padding:12px}
   .metric-grid{grid-template-columns:1fr 1fr}
+  .metric-grid-3{grid-template-columns:1fr}
   h1{font-size:clamp(30px,9vw,44px)}
   .scene-title{font-size:clamp(24px,7vw,34px)}
 }

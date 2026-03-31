@@ -51,6 +51,7 @@ const el = {
   score: document.getElementById('score'),
   roundLabel: document.getElementById('roundLabel'),
   timerLabel: document.getElementById('timerLabel'),
+  timerCard: document.getElementById('timerCard'),
   panel: document.getElementById('panel'),
   tabs: document.getElementById('tabs'),
   mainNav: document.getElementById('mainNav'),
@@ -305,13 +306,21 @@ function switchTab(tab) {
   render();
 }
 
+
+function updateTimerDisplay() {
+  const value = formatSeconds(getRemainingRoundSeconds(currentRound()));
+  if (el.timerLabel) el.timerLabel.textContent = value;
+  const remaining = getRemainingRoundSeconds(currentRound());
+  if (el.timerCard) el.timerCard.classList.toggle('is-warning', typeof remaining === 'number' && remaining <= 120);
+}
+
 function render() {
   renderHero();
   renderTabs();
   renderNav();
-  el.score.textContent = state.score;
-  el.roundLabel.textContent = currentRound();
-  el.timerLabel.textContent = formatSeconds(getRemainingRoundSeconds(currentRound()));
+  if (el.score) el.score.textContent = state.score;
+  if (el.roundLabel) el.roundLabel.textContent = currentRound();
+  updateTimerDisplay();
   if (state.activeHint) {
     el.hintBox.hidden = false;
     el.hintBox.style.display = 'block';
@@ -784,7 +793,7 @@ window.selectCheckpointAnswer = selectCheckpointAnswer;
 window.submitCheckpoint = submitCheckpoint;
 
 setInterval(() => {
-  if (game && el.timerLabel) el.timerLabel.textContent = formatSeconds(getRemainingRoundSeconds(currentRound()));
+  if (game) updateTimerDisplay();
 }, 1000);
 
 init();
