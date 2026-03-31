@@ -1,0 +1,9 @@
+UPDATE 008
+
+Minimal single-case hardload build.
+- Crime 001 only
+- No progression or multi-case loader
+- One navigation system
+- Home + Instructions + Scene/Clues/Suspects/Timeline/Interviews
+- Count-up timer with penalties
+- Pink checkpoint selection + Submit Answer flow
