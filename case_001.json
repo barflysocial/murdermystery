@@ -1,0 +1,1126 @@
+{
+  "case": {
+    "title": "The Karaoke Killer",
+    "finalScene": "scene_028_final_accusation",
+    "id": "case_001",
+    "subtitle": "A smoky bar-floor murder where a poisoned drink hides behind stage drama.",
+    "crime_number": "001",
+    "rank_required": "None",
+    "difficulty": "Rookie",
+    "tone": "Noir",
+    "setting": "The Velvet Room, Baton Rouge, Louisiana",
+    "series_arc": "Bar Serial Killings",
+    "mode": "Solo-first prototype",
+    "entryScene": "scene_001_opening",
+    "tabs": [
+      "home",
+      "scene",
+      "clues",
+      "suspects",
+      "timeline",
+      "interviews"
+    ],
+    "solution": {
+      "killer": "suspect_selena",
+      "motive": "expose_stolen_lyrics",
+      "method": "poisoned_drink_then_collapse",
+      "proof": "evidence_pill_bottle_cap"
+    },
+    "finalQuestions": [
+      {
+        "id": "killer",
+        "label": "Who killed Ricky Vale?",
+        "correct": "suspect_selena",
+        "options": [
+          [
+            "suspect_selena",
+            "Selena March"
+          ],
+          [
+            "suspect_jax",
+            "Jax Turner"
+          ],
+          [
+            "suspect_mia",
+            "Mia Monroe"
+          ],
+          [
+            "suspect_damien",
+            "Damien Cross"
+          ]
+        ]
+      },
+      {
+        "id": "motive",
+        "label": "Why did the killer do it?",
+        "correct": "expose_stolen_lyrics",
+        "options": [
+          [
+            "hide_staff_theft",
+            "To hide staff theft Ricky discovered"
+          ],
+          [
+            "expose_stolen_lyrics",
+            "To stop Ricky from exposing stolen lyrics"
+          ],
+          [
+            "collect_money",
+            "To collect money Ricky owed"
+          ],
+          [
+            "personal_betrayal",
+            "To retaliate for a personal betrayal"
+          ]
+        ]
+      },
+      {
+        "id": "method",
+        "label": "How was the murder committed?",
+        "correct": "poisoned_drink_then_collapse",
+        "options": [
+          [
+            "backstage_fight",
+            "Ricky was struck during a backstage fight"
+          ],
+          [
+            "poisoned_drink_then_collapse",
+            "Ricky was poisoned through his drink and then collapsed"
+          ],
+          [
+            "strangulation",
+            "Ricky was strangled behind the curtain"
+          ],
+          [
+            "alcohol_overdose",
+            "Ricky overdosed on alcohol alone"
+          ]
+        ]
+      },
+      {
+        "id": "proof",
+        "label": "Which clue most strongly supports the killer’s connection to the method?",
+        "correct": "evidence_pill_bottle_cap",
+        "options": [
+          [
+            "evidence_broken_flute",
+            "Broken champagne flute"
+          ],
+          [
+            "evidence_missing_cash_envelope",
+            "Missing cash envelope"
+          ],
+          [
+            "evidence_pill_bottle_cap",
+            "Pill bottle cap in Selena’s area"
+          ],
+          [
+            "evidence_bloody_curtain_smear",
+            "Jax’s bloody curtain smear"
+          ]
+        ]
+      }
+    ]
+  },
+  "ui": {
+    "hint_penalty": 8
+  },
+  "hints": {
+    "1": "Look for the clue that changes the cause of collapse, not the clue that only proves tension.",
+    "2": "Ask which suspect is least protected by timestamps or staff observation.",
+    "3": "Who was dressed like a performer and not clearly accounted for elsewhere?",
+    "4": "If the fall wasn’t first, something else had to make Ricky lose control.",
+    "5": "Who had the most to lose from Ricky speaking publicly before the night ended?"
+  },
+  "suspects": [
+    {
+      "id": "suspect_selena",
+      "name": "Selena March",
+      "role": "Finalist singer-songwriter",
+      "public_read": "Polished, composed, ambitious",
+      "relationship": "Promoted by Ricky, recently threatened by him",
+      "status_early": "Controlled but evasive",
+      "status_late": "Strong motive, weak timeline, high opportunity"
+    },
+    {
+      "id": "suspect_jax",
+      "name": "Jax Turner",
+      "role": "Rival finalist",
+      "public_read": "Angry, dramatic, unpredictable",
+      "relationship": "Resented Ricky’s favoritism",
+      "status_early": "Loudest suspect in the room",
+      "status_late": "Violent energy, weaker opportunity"
+    },
+    {
+      "id": "suspect_mia",
+      "name": "Mia Monroe",
+      "role": "Cocktail server and Ricky’s ex",
+      "public_read": "Guarded, tense, emotionally layered",
+      "relationship": "Former partner with unresolved history",
+      "status_early": "Hiding something personal",
+      "status_late": "Deceptive, but likely not the killer"
+    },
+    {
+      "id": "suspect_damien",
+      "name": "Damien Cross",
+      "role": "Sound engineer",
+      "public_read": "Irritated, detached, practical",
+      "relationship": "Frequent work conflict with Ricky",
+      "status_early": "Logistically possible",
+      "status_late": "Narrowed by timing"
+    }
+  ],
+  "evidence": {
+    "evidence_whiskey_glass": {
+      "title": "Ricky’s Whiskey Glass",
+      "category": "core",
+      "desc": "Half-finished whiskey with cloudy residue and lipstick on the rim.",
+      "short": "Cloudy residue in Ricky’s drink suggests contamination.",
+      "tags": [
+        "drink",
+        "poisoning",
+        "backstage"
+      ]
+    },
+    "evidence_lyric_fragment": {
+      "title": "Torn Lyric Fragment",
+      "category": "core",
+      "desc": "Fresh handwritten lyric scrap found near Ricky’s shoe behind the curtain.",
+      "short": "Fresh lyric scrap ties the scene to written material.",
+      "tags": [
+        "lyrics",
+        "motive"
+      ]
+    },
+    "evidence_bartender_statement": {
+      "title": "Bartender Statement",
+      "category": "core",
+      "desc": "Tasha heard Ricky tell someone, ‘You’re done after tonight.’",
+      "short": "Ricky threatened someone before the finals.",
+      "tags": [
+        "threat",
+        "argument"
+      ]
+    },
+    "evidence_security_note": {
+      "title": "Security Time Note",
+      "category": "core",
+      "desc": "Jax was outside and Damien was tied to booth activity during part of the window.",
+      "short": "Two obvious suspects gain timing protection.",
+      "tags": [
+        "timing",
+        "alibi"
+      ]
+    },
+    "evidence_dress_sighting": {
+      "title": "Corridor Dress Sighting",
+      "category": "core",
+      "desc": "A woman in dark stagewear slipped backstage after the argument.",
+      "short": "A performer-shaped figure had backstage access.",
+      "tags": [
+        "stagewear",
+        "opportunity"
+      ]
+    },
+    "evidence_toxicology_flag": {
+      "title": "Preliminary Toxicology Flag",
+      "category": "core",
+      "desc": "Ricky likely began collapsing before the head strike.",
+      "short": "The fall followed impairment, not the other way around.",
+      "tags": [
+        "medical",
+        "collapse"
+      ]
+    },
+    "evidence_pocket_note": {
+      "title": "Torn Pocket Note",
+      "category": "supporting",
+      "desc": "‘Meet me after second set. I found proof.’",
+      "short": "Ricky was expecting a private proof conversation.",
+      "tags": [
+        "meeting",
+        "proof"
+      ]
+    },
+    "evidence_bloody_curtain_smear": {
+      "title": "Bloody Curtain Smear",
+      "category": "supporting",
+      "desc": "Small blood trace on a curtain tie near broken stemware.",
+      "short": "Someone besides Ricky bled backstage earlier.",
+      "tags": [
+        "blood",
+        "red_herring"
+      ]
+    },
+    "evidence_broken_flute": {
+      "title": "Broken Champagne Flute",
+      "category": "red_herring",
+      "desc": "Fresh broken stemware near the backstage curtain.",
+      "short": "Broken glass suggests conflict but not method.",
+      "tags": [
+        "broken_glass",
+        "red_herring"
+      ]
+    },
+    "evidence_register_timestamp": {
+      "title": "Register Timestamp",
+      "category": "supporting",
+      "desc": "A front-lounge transaction tied to Mia’s station closed at 11:51 PM.",
+      "short": "Mia was likely out front during the key window.",
+      "tags": [
+        "register",
+        "alibi"
+      ]
+    },
+    "evidence_audio_booth_ping": {
+      "title": "Audio Booth Ping",
+      "category": "supporting",
+      "desc": "Damien appears tied to booth activity around 11:53 PM.",
+      "short": "Damien was not as free as he first looked.",
+      "tags": [
+        "booth",
+        "alibi"
+      ]
+    },
+    "evidence_duplicate_lyric_page": {
+      "title": "Duplicate Lyric Page",
+      "category": "supporting",
+      "desc": "Lyric material found with Selena closely matches the torn fragment.",
+      "short": "Selena possessed material matching the backstage clue.",
+      "tags": [
+        "lyrics",
+        "theft"
+      ]
+    },
+    "evidence_pill_bottle_cap": {
+      "title": "Pill Bottle Cap",
+      "category": "bonus",
+      "desc": "Loose amber pill bottle cap found in Selena’s area.",
+      "short": "Possible source container for what was added to Ricky’s drink.",
+      "tags": [
+        "medication",
+        "proof"
+      ]
+    },
+    "evidence_unsent_voicemail": {
+      "title": "Unsent Voicemail",
+      "category": "bonus",
+      "desc": "Ricky warned that someone had been stealing lyric material.",
+      "short": "Ricky feared retaliation over stolen lyrics.",
+      "tags": [
+        "warning",
+        "audio"
+      ]
+    },
+    "evidence_setlist_scribble": {
+      "title": "Rehearsal Set List Scribble",
+      "category": "bonus",
+      "desc": "Selena’s prep timing appears adjusted to strengthen her alibi.",
+      "short": "Selena’s timing may have been cleaned up in advance.",
+      "tags": [
+        "alibi",
+        "timeline"
+      ]
+    },
+    "evidence_missing_cash_envelope": {
+      "title": "Missing Cash Envelope",
+      "category": "red_herring",
+      "desc": "Cash drop envelope briefly unaccounted for during the night.",
+      "short": "Separate staff drama muddies the room.",
+      "tags": [
+        "cash",
+        "red_herring"
+      ]
+    }
+  },
+  "timeline": {
+    "public": [
+      [
+        "11:30 PM",
+        "Finals crowd builds."
+      ],
+      [
+        "11:35 PM",
+        "Ricky pockets a private note."
+      ],
+      [
+        "11:40 PM",
+        "Ricky argues backstage with someone."
+      ],
+      [
+        "11:52 PM",
+        "Ricky receives a whiskey backstage."
+      ],
+      [
+        "11:56 PM",
+        "Ricky is found collapsed behind the curtain."
+      ]
+    ]
+  },
+  "scenes": {
+    "scene_001_opening": {
+      "round": 1,
+      "title": "The Velvet Room",
+      "type": "scene",
+      "text": "The Velvet Room should have ended with applause. Instead, it ended with silence. Behind the curtain, Ricky Vale is dead, and the room already wants to call it a drunken backstage collapse.",
+      "choices": [
+        [
+          "Inspect the scene",
+          "scene_002_body_reveal"
+        ]
+      ]
+    },
+    "scene_002_body_reveal": {
+      "round": 1,
+      "title": "Behind the Curtain",
+      "type": "scene",
+      "text": "Ricky lies between a backstage mirror and a rolling sound case. The story wants to be simple. The body does not.",
+      "choices": [
+        [
+          "Examine the whiskey glass",
+          "scene_003_whiskey_glass"
+        ],
+        [
+          "Examine the curtain floor",
+          "scene_004_lyric_fragment"
+        ],
+        [
+          "Examine the broken glass",
+          "scene_005_broken_glass"
+        ],
+        [
+          "View suspect list",
+          "scene_006_suspect_board_intro"
+        ],
+        [
+          "Make your first call",
+          "scene_007_round1_checkpoint"
+        ]
+      ]
+    },
+    "scene_003_whiskey_glass": {
+      "round": 1,
+      "title": "Ricky’s Drink",
+      "type": "scene",
+      "text": "The whiskey glass near Ricky carries cloudy residue and lipstick on the rim. The liquid matters more than the glamour around it.",
+      "choices": [
+        [
+          "Return to the scene",
+          "scene_002_body_reveal"
+        ]
+      ],
+      "grants": [
+        "evidence_whiskey_glass"
+      ]
+    },
+    "scene_004_lyric_fragment": {
+      "round": 1,
+      "title": "Torn Paper",
+      "type": "scene",
+      "text": "A fresh handwritten lyric scrap rests near Ricky’s shoe. It looks less like litter and more like motive.",
+      "choices": [
+        [
+          "Return to the scene",
+          "scene_002_body_reveal"
+        ]
+      ],
+      "grants": [
+        "evidence_lyric_fragment"
+      ]
+    },
+    "scene_005_broken_glass": {
+      "round": 1,
+      "title": "Shattered Stemware",
+      "type": "scene",
+      "text": "Broken champagne glass and a small blood trace suggest conflict backstage — but conflict is not the same thing as murder method.",
+      "choices": [
+        [
+          "Return to the scene",
+          "scene_002_body_reveal"
+        ]
+      ],
+      "grants": [
+        "evidence_bloody_curtain_smear",
+        "evidence_broken_flute"
+      ]
+    },
+    "scene_006_suspect_board_intro": {
+      "round": 1,
+      "title": "Who Had Reason?",
+      "type": "scene",
+      "text": "Four people rise quickly: a polished finalist, a furious rival, an ex who knows Ricky too well, and a sound tech tired of blame. In a room like this, motive is easy. Truth is not.",
+      "choices": [
+        [
+          "Return to the scene",
+          "scene_002_body_reveal"
+        ]
+      ]
+    },
+    "scene_007_round1_checkpoint": {
+      "round": 1,
+      "title": "First Impression",
+      "type": "checkpoint",
+      "prompt": "You’ve seen the scene. One detail suggests Ricky’s death may have started before the fall. Which detail matters most?",
+      "answers": [
+        [
+          "The broken champagne flute",
+          false
+        ],
+        [
+          "The cloudy residue in Ricky’s whiskey",
+          true
+        ],
+        [
+          "The crowd still being in the room",
+          false
+        ],
+        [
+          "The blood on Ricky’s temple",
+          false
+        ]
+      ],
+      "correct": "The whiskey changes the bigger question: whether Ricky collapsed because he drank something he was never supposed to drink.",
+      "incorrect": "That clue may matter later, but it does not explain why Ricky lost control of his body.",
+      "next": "scene_008_tasha_intro",
+      "flag": "round_1_complete"
+    },
+    "scene_008_tasha_intro": {
+      "round": 2,
+      "title": "Tasha Bell",
+      "type": "interviewEntry",
+      "text": "The bartender has the look of someone who knows a room can lie faster than any person in it.",
+      "character": "interview_tasha",
+      "choices": [
+        [
+          "Open interview topics",
+          "__INTERVIEW__:interview_tasha"
+        ]
+      ]
+    },
+    "scene_009_leon_intro": {
+      "round": 2,
+      "title": "Leon Guidry",
+      "type": "interviewEntry",
+      "text": "The door man remembers movement better than drama.",
+      "character": "interview_leon",
+      "choices": [
+        [
+          "Open interview topics",
+          "__INTERVIEW__:interview_leon"
+        ]
+      ]
+    },
+    "scene_010_selena_intro": {
+      "round": 2,
+      "title": "Selena March",
+      "type": "interviewEntry",
+      "text": "Selena sits upright like posture itself is a defense.",
+      "character": "interview_selena",
+      "choices": [
+        [
+          "Open interview topics",
+          "__INTERVIEW__:interview_selena"
+        ]
+      ]
+    },
+    "scene_011_jax_intro": {
+      "round": 2,
+      "title": "Jax Turner",
+      "type": "interviewEntry",
+      "text": "Jax looks exactly like the kind of man a room would blame first.",
+      "character": "interview_jax",
+      "choices": [
+        [
+          "Open interview topics",
+          "__INTERVIEW__:interview_jax"
+        ]
+      ]
+    },
+    "scene_012_mia_intro": {
+      "round": 2,
+      "title": "Mia Monroe",
+      "type": "interviewEntry",
+      "text": "Mia looks less shocked than exhausted by the idea of Ricky even now.",
+      "character": "interview_mia",
+      "choices": [
+        [
+          "Open interview topics",
+          "__INTERVIEW__:interview_mia"
+        ]
+      ]
+    },
+    "scene_013_damien_intro": {
+      "round": 2,
+      "title": "Damien Cross",
+      "type": "interviewEntry",
+      "text": "Damien answers questions like every extra word costs him something.",
+      "character": "interview_damien",
+      "choices": [
+        [
+          "Open interview topics",
+          "__INTERVIEW__:interview_damien"
+        ]
+      ]
+    },
+    "scene_014_round2_checkpoint": {
+      "round": 2,
+      "title": "Whose Story Weakened?",
+      "type": "checkpoint",
+      "prompt": "After the first witness interviews, whose alibi weakens the most?",
+      "answers": [
+        [
+          "Selena March",
+          true
+        ],
+        [
+          "Jax Turner",
+          false
+        ],
+        [
+          "Mia Monroe",
+          false
+        ],
+        [
+          "Damien Cross",
+          false
+        ]
+      ],
+      "correct": "Tasha’s account and Selena’s timeline do not sit cleanly together. Selena wants Ricky to seem fine later than the room comfortably supports.",
+      "incorrect": "That suspect may still matter, but the strongest crack is where calm storytelling starts conflicting with witness timing.",
+      "next": "scene_015_carla_intro",
+      "flag": "round_2_complete"
+    },
+    "scene_015_carla_intro": {
+      "round": 3,
+      "title": "Carla Nguyen",
+      "type": "interviewEntry",
+      "text": "Carla saw movement in the side corridor that stopped feeling small once the body was found.",
+      "character": "interview_carla",
+      "choices": [
+        [
+          "Open interview topics",
+          "__INTERVIEW__:interview_carla"
+        ],
+        [
+          "Review Mia’s timestamp",
+          "scene_016_register_log"
+        ]
+      ]
+    },
+    "scene_016_register_log": {
+      "round": 3,
+      "title": "Register Timestamp",
+      "type": "scene",
+      "text": "A front register entry at 11:51 PM gives Mia cleaner timeline footing than her emotions do.",
+      "choices": [
+        [
+          "Review Damien’s timing",
+          "scene_017_booth_ping"
+        ]
+      ],
+      "grants": [
+        "evidence_register_timestamp"
+      ]
+    },
+    "scene_017_booth_ping": {
+      "round": 3,
+      "title": "Booth Activity",
+      "type": "scene",
+      "text": "A booth-related ping ties Damien to audio trouble around 11:53 PM, narrowing his freedom during the likely poison window.",
+      "choices": [
+        [
+          "Revisit Mia",
+          "scene_018_mia_followup"
+        ]
+      ],
+      "grants": [
+        "evidence_audio_booth_ping"
+      ]
+    },
+    "scene_018_mia_followup": {
+      "round": 3,
+      "title": "Mia Revisited",
+      "type": "scene",
+      "text": "Mia finally admits Ricky thought he had proof someone in the scene was stealing lyric material. Some of it may have been hers.",
+      "choices": [
+        [
+          "Reassess backstage access",
+          "scene_019_round3_checkpoint"
+        ]
+      ],
+      "extraFlags": [
+        "lyric_theft_motive_unlocked"
+      ]
+    },
+    "scene_019_round3_checkpoint": {
+      "round": 3,
+      "title": "Opportunity Window",
+      "type": "checkpoint",
+      "prompt": "Which suspect had the clearest unaccounted opportunity to tamper with Ricky’s drink?",
+      "answers": [
+        [
+          "Jax Turner",
+          false
+        ],
+        [
+          "Mia Monroe",
+          false
+        ],
+        [
+          "Selena March",
+          true
+        ],
+        [
+          "Damien Cross",
+          false
+        ]
+      ],
+      "correct": "Jax, Mia, and Damien all gain some timing protection. Selena is the one still left standing in the gap.",
+      "incorrect": "That suspect may feel noisy, but the cleanest access path belongs to the performer-shaped figure with the weakest outside support.",
+      "next": "scene_020_dr_price_intro",
+      "flag": "round_3_complete"
+    },
+    "scene_020_dr_price_intro": {
+      "round": 4,
+      "title": "Dr. Evan Price",
+      "type": "interviewEntry",
+      "text": "The coroner liaison is wonderfully uninterested in drama.",
+      "character": "interview_price",
+      "choices": [
+        [
+          "Open interview topics",
+          "__INTERVIEW__:interview_price"
+        ],
+        [
+          "Search the dressing area",
+          "scene_021_dressing_search"
+        ]
+      ]
+    },
+    "scene_021_dressing_search": {
+      "round": 4,
+      "title": "Dressing Area Search",
+      "type": "scene",
+      "text": "In Selena’s area, lyric material echoes the torn backstage fragment. Deeper in the chaos sits a loose amber pill bottle cap.",
+      "choices": [
+        [
+          "Press Selena again",
+          "scene_022_selena_followup"
+        ]
+      ],
+      "grants": [
+        "evidence_duplicate_lyric_page",
+        "evidence_pill_bottle_cap"
+      ]
+    },
+    "scene_022_selena_followup": {
+      "round": 4,
+      "title": "Selena Pressed",
+      "type": "scene",
+      "text": "Selena keeps calling patterns coincidence, but coincidence is starting to look expensive.",
+      "choices": [
+        [
+          "Lock your method theory",
+          "scene_023_round4_checkpoint"
+        ]
+      ]
+    },
+    "scene_023_round4_checkpoint": {
+      "round": 4,
+      "title": "Method Theory",
+      "type": "checkpoint",
+      "prompt": "What theory now best fits Ricky Vale’s death?",
+      "answers": [
+        [
+          "He was shoved into equipment during a fight",
+          false
+        ],
+        [
+          "He was stabbed offstage",
+          false
+        ],
+        [
+          "He was poisoned through his drink, then fell and struck equipment",
+          true
+        ],
+        [
+          "He overdosed accidentally from drinking too much",
+          false
+        ]
+      ],
+      "correct": "The head injury explains visible damage. The drink and medical sequence explain why he collapsed in the first place.",
+      "incorrect": "That theory explains part of the scene, but not the full order of events.",
+      "next": "scene_024_phone_review",
+      "flag": "round_4_complete"
+    },
+    "scene_024_phone_review": {
+      "round": 5,
+      "title": "Ricky’s Phone",
+      "type": "scene",
+      "text": "Ricky left an unsent recording warning that if anything happened, investigators should check the lyric books.",
+      "choices": [
+        [
+          "Check the stage paperwork",
+          "scene_025_setlist_scribble"
+        ]
+      ],
+      "grants": [
+        "evidence_unsent_voicemail"
+      ]
+    },
+    "scene_025_setlist_scribble": {
+      "round": 5,
+      "title": "Rehearsal Notes",
+      "type": "scene",
+      "text": "A scribbled timing adjustment makes Selena’s prep story feel less like memory and more like maintenance.",
+      "choices": [
+        [
+          "Build the final chain",
+          "scene_026_case_synthesis"
+        ]
+      ],
+      "grants": [
+        "evidence_setlist_scribble"
+      ]
+    },
+    "scene_026_case_synthesis": {
+      "round": 5,
+      "title": "What the Night Really Was",
+      "type": "scene",
+      "text": "This case is no longer about who disliked Ricky. It is about sequence, contamination, access, and why Selena had to keep him from finishing the night.",
+      "choices": [
+        [
+          "Answer the final round question",
+          "scene_027_round5_checkpoint"
+        ]
+      ]
+    },
+    "scene_027_round5_checkpoint": {
+      "round": 5,
+      "title": "Why Tonight?",
+      "type": "checkpoint",
+      "prompt": "Why was Ricky killed that night, before the show ended?",
+      "answers": [
+        [
+          "He discovered Damien’s reimbursements",
+          false
+        ],
+        [
+          "He was about to expose Selena’s lyric theft publicly",
+          true
+        ],
+        [
+          "He planned to get back together with Mia",
+          false
+        ],
+        [
+          "He was taking Jax out of the finals for good",
+          false
+        ]
+      ],
+      "correct": "Plenty of people disliked Ricky. Selena had the strongest reason to silence him before the night was over.",
+      "incorrect": "That motive may explain tension, but not the urgency.",
+      "next": "scene_028_final_accusation",
+      "flag": "round_5_complete"
+    },
+    "scene_028_final_accusation": {
+      "round": "Final",
+      "title": "Name the Killer",
+      "type": "final",
+      "text": "The music is off. The glasses are still. Now the room wants a name."
+    },
+    "ending_perfect": {
+      "round": "Final",
+      "title": "Perfect Solve",
+      "type": "ending",
+      "text": "You saw through the performance. Selena poisoned Ricky before the fall and acted in quiet panic because he had enough to expose what she built her future on. And in Ricky’s notes, the black treble-clef symbol appears again."
+    },
+    "ending_solved": {
+      "round": "Final",
+      "title": "Case Solved",
+      "type": "ending",
+      "text": "You got to the truth. Selena poisoned Ricky before the fall, and the lyric theft explains why she could not let him finish the night."
+    },
+    "ending_partial": {
+      "round": "Final",
+      "title": "Close, But Incomplete",
+      "type": "ending",
+      "text": "You found pieces of the truth, but not tightly enough to close every opening the room still offered."
+    },
+    "ending_failed": {
+      "round": "Final",
+      "title": "Wrong Suspect",
+      "type": "ending",
+      "text": "You followed the loudest version of the night. The real clue was waiting at the bottom of a drink."
+    }
+  },
+  "interviews": {
+    "interview_tasha": {
+      "name": "Tasha Bell",
+      "intro": "Ricky wasn’t stumbling around like a man about to drop dead. Let’s start there.",
+      "topics": [
+        {
+          "id": "tasha_drink",
+          "label": "Ricky’s Last Drink",
+          "response": "Whiskey. Straight. He was still moving like himself when it went back to him.",
+          "flags": [
+            "tasha_last_drink_asked"
+          ]
+        },
+        {
+          "id": "tasha_condition",
+          "label": "Ricky’s Condition",
+          "response": "Buzzed? Sure. But not ‘body suddenly quits’ drunk."
+        },
+        {
+          "id": "tasha_argument",
+          "label": "The Argument",
+          "response": "I heard Ricky say, ‘You’re done after tonight.’ That part was crystal clear.",
+          "flags": [
+            "tasha_threat_heard"
+          ],
+          "grants": [
+            "evidence_bartender_statement"
+          ]
+        },
+        {
+          "id": "tasha_nearby",
+          "label": "Who Was Nearby",
+          "response": "Selena kept orbiting that side more than once, and Jax looked like a wall deserved punishment."
+        }
+      ]
+    },
+    "interview_leon": {
+      "name": "Leon Guidry",
+      "intro": "Everybody wants exact times after a body drops. Funny how that works.",
+      "topics": [
+        {
+          "id": "leon_jax",
+          "label": "Jax Outside",
+          "response": "He stepped out angry and came back still carrying it.",
+          "flags": [
+            "leon_jax_outside_confirmed"
+          ]
+        },
+        {
+          "id": "leon_window",
+          "label": "Time Window",
+          "response": "Around 11:49 when he went out, give or take."
+        },
+        {
+          "id": "leon_damien",
+          "label": "Damien Cross",
+          "response": "Booth side around 11:53. Not glued there every second, but close enough.",
+          "flags": [
+            "leon_damien_timing_confirmed"
+          ],
+          "grants": [
+            "evidence_security_note"
+          ]
+        },
+        {
+          "id": "leon_backstage",
+          "label": "Backstage Visibility",
+          "response": "That side corridor eats details. Once someone slips through the right angle, the room stops seeing them."
+        }
+      ]
+    },
+    "interview_selena": {
+      "name": "Selena March",
+      "intro": "I’m cooperating. I’d just appreciate it if everyone stopped acting like being composed is suspicious.",
+      "topics": [
+        {
+          "id": "selena_argument",
+          "label": "Ricky Argument",
+          "response": "Ricky liked to posture. He talked to people like their futures sat in his pocket.",
+          "flags": [
+            "selena_argument_asked"
+          ]
+        },
+        {
+          "id": "selena_last",
+          "label": "Last Time You Saw Ricky",
+          "response": "Near the mirror side. He was upright, talking, fully capable of being rude.",
+          "flags": [
+            "selena_last_seen_asked"
+          ]
+        },
+        {
+          "id": "selena_finals",
+          "label": "Finals Status",
+          "response": "If Ricky threatened me, it was because he enjoyed making people feel unstable right before they needed to perform."
+        },
+        {
+          "id": "selena_lyrics",
+          "label": "Lyric Ownership",
+          "requiresEvidence": [
+            "evidence_lyric_fragment"
+          ],
+          "response": "People repeat phrases. They borrow emotion. Nobody owns heartbreak."
+        }
+      ]
+    },
+    "interview_jax": {
+      "name": "Jax Turner",
+      "intro": "If you want the truth, fine: Ricky was a snake.",
+      "topics": [
+        {
+          "id": "jax_rivalry",
+          "label": "Ricky Rivalry",
+          "response": "He played favorites and called it taste.",
+          "flags": [
+            "jax_rivalry_asked"
+          ]
+        },
+        {
+          "id": "jax_hand",
+          "label": "Bloody Hand",
+          "requiresEvidence": [
+            "evidence_bloody_curtain_smear"
+          ],
+          "response": "I hit something that didn’t hit back. Still not murder."
+        },
+        {
+          "id": "jax_smoke",
+          "label": "Smoking Break",
+          "response": "Yeah, I went outside. Needed air.",
+          "flags": [
+            "jax_smoking_confirmed"
+          ]
+        },
+        {
+          "id": "jax_selena",
+          "label": "Selena March",
+          "response": "He was harder on her because he had more invested in her."
+        }
+      ]
+    },
+    "interview_mia": {
+      "name": "Mia Monroe",
+      "intro": "Don’t do the thing where being the ex turns me into poetry in a police report.",
+      "topics": [
+        {
+          "id": "mia_money",
+          "label": "Money Ricky Owed",
+          "response": "Enough to irritate me. Not enough to make me sloppy."
+        },
+        {
+          "id": "mia_history",
+          "label": "Relationship History",
+          "response": "Too much history, not enough trust, and a job that never let either of us disappear."
+        },
+        {
+          "id": "mia_work",
+          "label": "Front Lounge Work",
+          "response": "Working. Drinks. Tabs. Same as always."
+        },
+        {
+          "id": "mia_lyrics",
+          "label": "Lyric Rumors",
+          "requiresEvidence": [
+            "evidence_lyric_fragment"
+          ],
+          "response": "Ricky hinted somebody was lifting material around this scene.",
+          "grants": [
+            "evidence_pocket_note"
+          ]
+        }
+      ]
+    },
+    "interview_damien": {
+      "name": "Damien Cross",
+      "intro": "Ask what you want. Just ask it fast.",
+      "topics": [
+        {
+          "id": "damien_conflict",
+          "label": "Work Conflict",
+          "response": "Bad enough that I wouldn’t miss him professionally. Not bad enough to poison him over it."
+        },
+        {
+          "id": "damien_booth",
+          "label": "Booth Timing",
+          "response": "There was a monitor issue and I dealt with it.",
+          "flags": [
+            "damien_booth_claim_made"
+          ]
+        },
+        {
+          "id": "damien_access",
+          "label": "Backstage Access",
+          "response": "Everyone in staff has backstage access. That doesn’t make access the same as opportunity."
+        },
+        {
+          "id": "damien_cash",
+          "label": "Missing Cash Envelope",
+          "requiresEvidence": [
+            "evidence_missing_cash_envelope"
+          ],
+          "response": "If it was actually missing, management cared more tomorrow than tonight."
+        }
+      ]
+    },
+    "interview_carla": {
+      "name": "Carla Nguyen",
+      "intro": "I didn’t see a face, so I don’t want my memory promoted into certainty.",
+      "topics": [
+        {
+          "id": "carla_saw",
+          "label": "What You Saw",
+          "response": "A woman moving toward the backstage curtain from the side corridor. Quick. Head down.",
+          "flags": [
+            "carla_movement_seen"
+          ]
+        },
+        {
+          "id": "carla_clothing",
+          "label": "Clothing",
+          "response": "Dark dress. Stagewear, not service blacks.",
+          "flags": [
+            "carla_stagewear_confirmed"
+          ],
+          "grants": [
+            "evidence_dress_sighting"
+          ]
+        },
+        {
+          "id": "carla_mia",
+          "label": "Could It Be Mia?",
+          "response": "Not unless Mia suddenly dressed for the finals without telling anyone."
+        },
+        {
+          "id": "carla_time",
+          "label": "Time of Sighting",
+          "response": "After voices got tense backstage. Before the room fully realized something was wrong."
+        }
+      ]
+    },
+    "interview_price": {
+      "name": "Dr. Evan Price",
+      "intro": "You already have enough noise in this case. I’ll keep to what the body is willing to say.",
+      "topics": [
+        {
+          "id": "price_sequence",
+          "label": "Cause Sequence",
+          "response": "The collapse came first. The head injury is more consistent with secondary impact than primary attack."
+        },
+        {
+          "id": "price_poison",
+          "label": "Poisoning Theory",
+          "response": "‘Simple drunken fall’ is not a satisfying explanation.",
+          "grants": [
+            "evidence_toxicology_flag"
+          ]
+        },
+        {
+          "id": "price_alcohol",
+          "label": "Alcohol Alone",
+          "response": "Alcohol may be present. That is not the same as alcohol being sufficient."
+        },
+        {
+          "id": "price_time",
+          "label": "Time to Collapse",
+          "response": "Fast enough that the fall could appear accidental to bystanders in a loud room."
+        }
+      ]
+    }
+  }
+}

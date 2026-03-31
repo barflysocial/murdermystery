@@ -1,0 +1,20 @@
+{
+  "default_case": "case_001.json",
+  "cases": [
+    {
+      "id": "case_001",
+      "file": "case_001.json",
+      "label": "Crime 001 — The Karaoke Killer"
+    },
+    {
+      "id": "case_002",
+      "file": "case_002.json",
+      "label": "Crime 002 — The Dead Aim"
+    },
+    {
+      "id": "case_003",
+      "file": "case_003.json",
+      "label": "Crime 003 — The House Never Mourns"
+    }
+  ]
+}
