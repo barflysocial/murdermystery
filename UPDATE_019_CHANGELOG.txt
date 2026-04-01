@@ -1,0 +1,18 @@
+UPDATE 019
+
+Verified feature included:
+- Added "Difficulty: Rookie" directly under the title in the header
+
+Carried forward from UPDATE 018:
+- Instructions include exact scoring and penalty rules
+- Instructions explain attempts clearly
+- Checkpoint tab turns green when the current round’s required actions are complete and the checkpoint is ready
+- Checkpoint post-reveal auto-advance delay is 10 seconds
+- Checkpoint is its own tab
+- Checkpoint stays locked until required investigation scenes are completed
+- Scene tab supports free investigation within the current round
+- Home hides after Start
+- Start counts as Attempt 1
+- New Attempt system retained
+- Attempts shown in Active Run
+- Timeline and Clues compatibility retained
