@@ -1,0 +1,11 @@
+{
+  "default_case": "case_002.json",
+  "cases": [
+    {
+      "id": "case_002",
+      "file": "case_002.json",
+      "label": "Crime 002 \u2014 The Dead Aim",
+      "lockType": "public"
+    }
+  ]
+}
