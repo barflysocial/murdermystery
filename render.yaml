@@ -1,0 +1,5 @@
+services:
+  - type: web
+    name: police-academy
+    runtime: static
+    staticPublishPath: .
