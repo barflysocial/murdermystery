@@ -1,0 +1,11 @@
+{
+  "default_case": "police_academy_case.json",
+  "cases": [
+    {
+      "id": "police_academy",
+      "file": "police_academy_case.json",
+      "label": "Police Academy",
+      "lockType": "public"
+    }
+  ]
+}
