@@ -1,0 +1,35 @@
+UPDATE 032
+
+Verified features included:
+- Replaced the Case 001 hero/background artwork with the exact uploaded Karaoke Kills image
+- Case 001 still uses the same image for the top hero graphic and the blurred darker background
+
+Carried forward from UPDATE 031:
+- Added the Karaoke Kills / The Velvet Room graphic to Case 001
+- Placed the graphic at the top of the screen in the header
+- Added a blurred darker background using the same graphic
+- Included the Case 001 artwork file in the bundle
+- Applied unlock logic from UPDATE 026 to Case 001
+- Perfect Solve -> next case unlocked flow
+- Solved -> next case unlocked flow
+- Partial -> no unlock, retry prompt
+- Failed -> no unlock, retry prompt
+- Successful solve now triggers a winner-style overlay
+- Winner flow holds for 10 seconds, then shows a return-next-week unlock message
+- Case 001 timer stops immediately when the final accusation is submitted
+- Final accusation can only be submitted once per attempt
+- Final answer choices are locked after submission
+- Final submit button is disabled after submission
+- Difficulty: Rookie under the title
+- Instructions include exact scoring and penalty rules
+- Instructions explain attempts clearly
+- Checkpoint tab turns green when ready
+- Checkpoint post-reveal auto-advance delay is 10 seconds
+- Checkpoint is its own tab
+- Checkpoint stays locked until required investigation scenes are completed
+- Scene tab supports free investigation within the current round
+- Home hides after Start
+- Start counts as Attempt 1
+- New Attempt system retained
+- Attempts shown in Active Run
+- Timeline and Clues compatibility retained
