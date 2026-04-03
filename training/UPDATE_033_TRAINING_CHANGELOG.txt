@@ -1,0 +1,8 @@
+UPDATE 033 TRAINING
+
+Verified features included:
+- Police Academy now saves a local unlock flag on successful completion
+- Police Academy now saves the promoted rank as Rookie
+- After the successful-solve winner hold, Police Academy redirects to Case 001
+- Successful completion means Perfect Solve or Solved
+- Partial and Failed still do not unlock Case 001
