@@ -1,0 +1,424 @@
+{
+  "case": {
+    "title": "Police Academy",
+    "subtitle": "Learn how to investigate, unlock clues, and solve a case.",
+    "setting": "Training Division Briefing Room",
+    "entryScene": "scene_001_opening",
+    "finalScene": "scene_013_final_accusation",
+    "difficulty": "Training",
+    "finalQuestions": [
+      {
+        "id": "killer",
+        "label": "Who moved the evidence envelope?",
+        "options": [
+          [
+            "evan_pike",
+            "Evan Pike"
+          ],
+          [
+            "rosa_bell",
+            "Rosa Bell"
+          ],
+          [
+            "miles_trent",
+            "Miles Trent"
+          ]
+        ],
+        "correct": "miles_trent"
+      },
+      {
+        "id": "motive",
+        "label": "Why did the envelope get moved?",
+        "options": [
+          [
+            "hide_keycard",
+            "To hide that Miles returned to recover his misplaced keycard and avoid blame"
+          ],
+          [
+            "frame_evan",
+            "To frame Evan for tampering"
+          ],
+          [
+            "cleaning_error",
+            "It was moved by mistake during cleaning"
+          ]
+        ],
+        "correct": "hide_keycard"
+      },
+      {
+        "id": "method",
+        "label": "How did you deduce the truth?",
+        "options": [
+          [
+            "combined_clues",
+            "The keycard, cleanup timing, and Rosa's statement contradicted Miles's story"
+          ],
+          [
+            "nervous_behavior",
+            "Evan looked the most nervous"
+          ],
+          [
+            "access_alone",
+            "Rosa had the most access to the room"
+          ]
+        ],
+        "correct": "combined_clues"
+      },
+      {
+        "id": "proof",
+        "label": "What is the strongest proof clue?",
+        "options": [
+          [
+            "evidence_rosa_followup",
+            "Rosa's follow-up statement"
+          ],
+          [
+            "evidence_coffee_ring",
+            "The coffee cup ring"
+          ],
+          [
+            "evidence_log_timestamp",
+            "The briefing log timestamp"
+          ]
+        ],
+        "correct": "evidence_rosa_followup"
+      }
+    ]
+  },
+  "scenes": {
+    "scene_001_opening": {
+      "round": 1,
+      "title": "Welcome to Police Academy",
+      "text": "Sergeant Vale slides a sealed briefing envelope onto the table, then frowns.\n\n'The envelope was here ten minutes ago. Now it isn't. Good. Training starts now.'\n\nThis mini case teaches you how to use the tabs, unlock clues, and complete checkpoints. Your job is to figure out who moved the envelope and why.",
+      "choices": [
+        [
+          "Inspect the briefing table",
+          "scene_002_briefing_table"
+        ],
+        [
+          "Inspect the seating area",
+          "scene_003_seating_area"
+        ],
+        [
+          "Go to Interviews and question Rosa Bell",
+          "__INTERVIEW__:rosa_bell"
+        ]
+      ]
+    },
+    "scene_002_briefing_table": {
+      "round": 1,
+      "title": "Briefing Table",
+      "text": "A faint coffee ring sits near the missing envelope marker. Someone stood at the table after the briefing ended.",
+      "grants": [
+        "evidence_coffee_ring"
+      ],
+      "choices": [
+        [
+          "Inspect the seating area",
+          "scene_003_seating_area"
+        ],
+        [
+          "Review the room access board",
+          "scene_004_access_board"
+        ],
+        [
+          "Go to Interviews and question Rosa Bell",
+          "__INTERVIEW__:rosa_bell"
+        ]
+      ]
+    },
+    "scene_003_seating_area": {
+      "round": 1,
+      "title": "Seating Area",
+      "text": "Under a chair leg, you find a misplaced trainee keycard. Sergeant Vale nods.\n\n'Good. Physical evidence matters more than body language.'",
+      "grants": [
+        "evidence_keycard"
+      ],
+      "choices": [
+        [
+          "Inspect the briefing table",
+          "scene_002_briefing_table"
+        ],
+        [
+          "Review the room access board",
+          "scene_004_access_board"
+        ],
+        [
+          "Go to Interviews and question Rosa Bell",
+          "__INTERVIEW__:rosa_bell"
+        ]
+      ]
+    },
+    "scene_004_access_board": {
+      "round": 1,
+      "title": "Room Access Board",
+      "text": "The board lists who had access after briefing: Evan Pike, Rosa Bell, and Miles Trent.\n\nSergeant Vale reminds you that access creates suspicion, not proof.",
+      "choices": [
+        [
+          "Inspect the briefing table",
+          "scene_002_briefing_table"
+        ],
+        [
+          "Inspect the seating area",
+          "scene_003_seating_area"
+        ],
+        [
+          "Open the Checkpoint tab",
+          "scene_004_access_board"
+        ]
+      ]
+    },
+    "scene_005_round1_checkpoint": {
+      "round": 1,
+      "type": "checkpoint",
+      "title": "Round 1 Checkpoint",
+      "prompt": "What is the most important lesson from the first round?",
+      "answers": [
+        [
+          "The most nervous suspect is always guilty",
+          false
+        ],
+        [
+          "Every unlocked clue should appear in the Clues tab",
+          true
+        ],
+        [
+          "Janitors are always the best witnesses",
+          false
+        ],
+        [
+          "The timeline does not matter",
+          false
+        ]
+      ],
+      "correct": "Correct. Scene actions and interview topics should push evidence into the Clues tab so you can review what you have actually confirmed.",
+      "incorrect": "Not quite. The key lesson here is that your unlocked evidence should appear in the Clues tab so you can reason from confirmed information, not guesswork.",
+      "next": "scene_006_round2_brief"
+    },
+    "scene_006_round2_brief": {
+      "round": 2,
+      "title": "Round 2 Brief",
+      "text": "Sergeant Vale folds his arms.\n\n'Now stop chasing vibes. Compare stories to evidence. That's deduction.'\n\nRound 2 teaches contradiction: who said something that the clues cannot support?",
+      "choices": [
+        [
+          "Inspect the briefing log",
+          "scene_007_log_review"
+        ],
+        [
+          "Go to Interviews and question Evan Pike",
+          "__INTERVIEW__:evan_pike"
+        ],
+        [
+          "Go to Interviews and question Miles Trent",
+          "__INTERVIEW__:miles_trent"
+        ],
+        [
+          "Go to Interviews and question Rosa Bell again",
+          "__INTERVIEW__:rosa_bell"
+        ]
+      ]
+    },
+    "scene_007_log_review": {
+      "round": 2,
+      "title": "Briefing Log",
+      "text": "The sign-out record shows the envelope was still logged at dismissal and disappeared after the official session ended.",
+      "grants": [
+        "evidence_log_timestamp"
+      ],
+      "choices": [
+        [
+          "Question Evan Pike",
+          "__INTERVIEW__:evan_pike"
+        ],
+        [
+          "Question Miles Trent",
+          "__INTERVIEW__:miles_trent"
+        ],
+        [
+          "Question Rosa Bell",
+          "__INTERVIEW__:rosa_bell"
+        ]
+      ]
+    },
+    "scene_008_round2_checkpoint": {
+      "round": 2,
+      "type": "checkpoint",
+      "title": "Round 2 Checkpoint",
+      "prompt": "Which suspect's story is contradicted by the evidence?",
+      "answers": [
+        [
+          "Evan Pike",
+          false
+        ],
+        [
+          "Rosa Bell",
+          false
+        ],
+        [
+          "Miles Trent",
+          true
+        ]
+      ],
+      "correct": "Correct. Miles claimed he never re-entered the room, but the keycard, timestamp, and Rosa's follow-up statement do not support that.",
+      "incorrect": "Not quite. The contradiction is in Miles Trent's version of events, not just in who seemed the most suspicious.",
+      "next": "scene_013_final_accusation"
+    },
+    "scene_013_final_accusation": {
+      "round": 3,
+      "type": "final",
+      "title": "Final Accusation",
+      "text": "Sergeant Vale taps the table. 'Now prove you can finish a case the right way. Name who moved it, why, and what proves it.'"
+    }
+  },
+  "evidence": {
+    "evidence_coffee_ring": {
+      "title": "Coffee Cup Ring",
+      "desc": "A fresh ring on the briefing table shows someone stood at the envelope position after the session ended.",
+      "tags": [
+        "scene clue",
+        "table",
+        "timing"
+      ]
+    },
+    "evidence_cleaning_note": {
+      "title": "Cleaning Shift Note",
+      "desc": "Rosa's cleanup note shows cleaning started later than Miles implied.",
+      "tags": [
+        "interview clue",
+        "timing",
+        "cleanup"
+      ]
+    },
+    "evidence_keycard": {
+      "title": "Keycard Under Chair",
+      "desc": "A trainee keycard was found under a chair, suggesting someone returned to recover something.",
+      "tags": [
+        "physical clue",
+        "contradiction",
+        "access"
+      ]
+    },
+    "evidence_log_timestamp": {
+      "title": "Briefing Log Timestamp",
+      "desc": "The envelope disappeared after official dismissal, not during the briefing itself.",
+      "tags": [
+        "timeline",
+        "record",
+        "timing"
+      ]
+    },
+    "evidence_rosa_followup": {
+      "title": "Rosa's Follow-Up Statement",
+      "desc": "Rosa saw Miles tuck the envelope into a side drawer after coming back for his keycard.",
+      "tags": [
+        "witness",
+        "proof",
+        "deduction"
+      ]
+    }
+  },
+  "suspects": [
+    {
+      "name": "Evan Pike",
+      "role": "Recruit",
+      "public_read": "Nervous, eager, and easy to rattle. He looks guilty fast, but nerves are not evidence."
+    },
+    {
+      "name": "Rosa Bell",
+      "role": "Custodial Staff",
+      "public_read": "Calm, observant, and easy to overlook. She saw more than she first admitted."
+    },
+    {
+      "name": "Miles Trent",
+      "role": "Dispatcher Trainee",
+      "public_read": "Confident and polished, but defensive when his timeline is challenged."
+    }
+  ],
+  "timeline": {
+    "public": [
+      {
+        "time": "7:00 PM",
+        "text": "Briefing session begins."
+      },
+      {
+        "time": "7:18 PM",
+        "text": "Official dismissal is recorded."
+      },
+      {
+        "time": "7:23 PM",
+        "text": "The envelope is noticed missing."
+      },
+      {
+        "time": "7:25 PM",
+        "text": "Sergeant Vale begins the training investigation."
+      }
+    ]
+  },
+  "interviews": {
+    "rosa_bell": {
+      "name": "Rosa Bell",
+      "intro": "Rosa leans on her mop handle. 'I clean up what people leave behind. Sometimes that includes the truth.'",
+      "topics": [
+        {
+          "id": "rosa_cleanup",
+          "label": "Cleanup Timing",
+          "response": "Cleanup did not start right away. The room sat open for a few minutes after dismissal.",
+          "grants_evidence": [
+            "evidence_cleaning_note"
+          ]
+        },
+        {
+          "id": "rosa_followup",
+          "label": "What did you really see?",
+          "requires_evidence": [
+            "evidence_keycard",
+            "evidence_log_timestamp"
+          ],
+          "response": "Miles came back in, found his keycard was missing, and then shoved the envelope into the side drawer like he wanted the room to look untouched.",
+          "grants_evidence": [
+            "evidence_rosa_followup"
+          ]
+        }
+      ]
+    },
+    "evan_pike": {
+      "name": "Evan Pike",
+      "intro": "Evan straightens up too quickly. 'I know I look bad. I just didn't want to be the first person blamed.'",
+      "topics": [
+        {
+          "id": "evan_table",
+          "label": "Why were you near the table?",
+          "response": "I moved my coffee and got out of the way. That's it. I never touched the envelope."
+        },
+        {
+          "id": "evan_keycard",
+          "label": "Did you lose a keycard?",
+          "response": "No. Mine never left my pocket. Ask Miles if you want to talk about missing things."
+        }
+      ]
+    },
+    "miles_trent": {
+      "name": "Miles Trent",
+      "intro": "Miles keeps his tone even. 'I left when everyone else did. If the envelope vanished later, that wasn't me.'",
+      "topics": [
+        {
+          "id": "miles_timeline",
+          "label": "Your Timeline",
+          "response": "Briefing ended, I walked out, and I did not come back."
+        },
+        {
+          "id": "miles_keycard",
+          "label": "Missing Keycard",
+          "requires_evidence": [
+            "evidence_keycard"
+          ],
+          "response": "That could be anyone's keycard. Finding it doesn't prove I came back."
+        }
+      ]
+    }
+  },
+  "hints": {
+    "1": "To unlock the first checkpoint, inspect both physical areas and interview Rosa at least once.",
+    "2": "Round 2 is about contradiction. Compare what Miles says to the keycard, timestamp, and Rosa's follow-up statement."
+  }
+}
