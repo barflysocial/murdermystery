@@ -1,7 +1,0 @@
-UPDATE 033 CASE 001
-
-Verified features included:
-- Case 001 now checks for the Police Academy unlock flag before loading
-- If Training is not complete, Case 001 shows an access-locked screen
-- The access-locked screen includes a button to go to Training
-- Case 001 loads normally only when the training unlock flag exists
