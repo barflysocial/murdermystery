@@ -1,5 +1,0 @@
-UPDATE 037 CASE 001
-
-Verified features included:
-- Reduced the visual size of the Active Run panel
-- Tightened spacing and reduced status number size so Active Run feels less dominant
