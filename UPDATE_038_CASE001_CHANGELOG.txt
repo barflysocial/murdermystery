@@ -1,0 +1,5 @@
+UPDATE 038 CASE 001
+
+Verified features included:
+- Moved the checkpoint result explanation into the countdown overlay
+- Case 001 countdown overlay now shows both the explanation text and the countdown
